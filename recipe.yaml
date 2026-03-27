@@ -24,5 +24,3 @@ tasks:
 
   - action: run_cmd
     cmd: echo XM CORE INSTALLIERT
-
-  - action: done
