@@ -21,6 +21,3 @@ tasks:
 
   - action: remove_path
     path: ./tmp
-
-  - action: run_cmd
-    cmd: echo Installation fertig
