@@ -23,4 +23,4 @@ tasks:
     path: ./tmp
 
   - action: run_cmd
-    cmd: echo XM CORE INSTALLIERT
+    cmd: echo Installation fertig
