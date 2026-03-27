@@ -1,3 +1,28 @@
-name: XM Core V5
+$schema: https://raw.githubusercontent.com/tabarra/txAdmin-recipe-schema/main/schema.json
+
+name: XM Core V5 Ultimate Server
+author: XenoModdingAT
+description: Full RP Server mit XM Core Framework
+
 tasks:
+
+  - action: download_github
+    src: https://github.com/XenoModdingAT/xm_core_template
+    ref: main
+    dest: ./tmp/xmcore
+
+  - action: move_path
+    src: ./tmp/xmcore/resources
+    dest: ./resources
+
+  - action: move_path
+    src: ./tmp/xmcore/server.cfg
+    dest: ./server.cfg
+
+  - action: remove_path
+    path: ./tmp
+
+  - action: run_cmd
+    cmd: echo XM CORE INSTALLIERT
+
   - action: done
